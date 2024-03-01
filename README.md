@@ -11,16 +11,13 @@
     - City.cpp
     - City.h
     - CMakeLists.txt
-    - cmake-build-debug
+    - lib
         - libPathSearching.dll (Dynamic DLL)
         - ...
 
 - Test (Testing Project)
     - CMakeLists.txt
     - main.cpp
-    - cmake-build-debug
-        - libPathSearching.dll (Copy of the Dynamic DLL)
-        - ...
 ```
 
 ## Usage
@@ -32,7 +29,7 @@ To use the `PathSearching` library in your C++ project, follow these steps:
 
     ```cmake
     set(PATH_SEARCHING_DIR "${CMAKE_SOURCE_DIR}/../PathSearching")
-    set(PATH_SEARCHING_LIB_DIR "${PATH_SEARCHING_DIR}/cmake-build-debug")
+    set(PATH_SEARCHING_LIB_DIR "${PATH_SEARCHING_DIR}/lib")
     ```
 
 2. **Include and Link:**
@@ -77,7 +74,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 # Set the path to the PathSearching library
 set(PATH_SEARCHING_DIR "${CMAKE_SOURCE_DIR}/../PathSearching")
-set(PATH_SEARCHING_LIB_DIR "${PATH_SEARCHING_DIR}/cmake-build-debug")
+set(PATH_SEARCHING_LIB_DIR "${PATH_SEARCHING_DIR}/lib")
 
 add_executable(Test main.cpp)
 

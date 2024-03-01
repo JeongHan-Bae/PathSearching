@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 # Set the path to the PathSearching library
 set(PATH_SEARCHING_DIR "${CMAKE_SOURCE_DIR}/../PathSearching")
-set(PATH_SEARCHING_LIB_DIR "${PATH_SEARCHING_DIR}/cmake-build-debug")
+set(PATH_SEARCHING_LIB_DIR "${PATH_SEARCHING_DIR}/lib")
 
 add_executable(Test main.cpp)
 
